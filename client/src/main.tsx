@@ -1,10 +1,8 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import "./index.css";
-import App from "./App.tsx";
+import preact, { render } from "preact";
 
-createRoot(document.getElementById("root")!).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-);
+function App() {
+  return <p class="big">Hello World!</p>;
+}
+
+const d = document.getElementById("app");
+if (d) render(<App />, d);
