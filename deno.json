@@ -11,9 +11,8 @@
     "vite": "npm:vite@^5.4.11"
   },
   "compilerOptions": {
-    "jsx": "react",
-    "jsxFactory": "preact.createElement",
-    "jsxFragmentFactory": "preact.Fragment",
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact",
     "lib": ["dom", "dom.iterable", "deno.ns"],
     "types": []
   }
